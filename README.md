@@ -1,3 +1,16 @@
+# Cómo crear un proyecto de React + TypeScript + Vite
+`npm create vite`
+
+Elegimos las opciones, React, TypeScript + SWC
+
+Posteriormente:
+
+`cd directorio_proyecto`
+
+`npm install`
+
+`npm run dev`
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
