@@ -1,4 +1,7 @@
 // Las variables si no se modifican pueden estar fuera del componente y es más eficiente porque el código dentro del 
+
+import { CSSProperties } from "react";
+
 // componente se ejecuta constantemente.
 const firstName = 'Inma';
 const lastName = 'Gijón';
@@ -10,13 +13,21 @@ const address = {
     zipCode: 'ABC-123',
     country: 'Canadá'
 };
+
+const myStyles: CSSProperties = {
+                backgroundColor: '#fafafa',
+                borderRadius: isActive ? 10: 20,
+                padding: 10,
+                marginTop: 30,
+            };
+
 export const MyAwesomeApp = () => {
 
     return(
         <>
             <h1>{firstName}</h1>
             <h3>{lastName}</h3>
-            <p>{favoriteGames.join(', ')}</p>
+            <p style={myStyles}>{favoriteGames.join(', ')}</p>
             <p>{2+2}</p>
             {/* Un boolean no tiene representación por sí mismo en React */}
             <h1>{isActive ? 'Activo': 'No activo'}</h1>
